@@ -9,6 +9,7 @@ import org.openxava.annotations.Money;
 import org.openxava.annotations.TextArea;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Entity
@@ -16,7 +17,7 @@ import java.math.BigDecimal;
 @Setter
 
 
-public class Producto {
+public class Producto implements Serializable {
 
     @Id  @Column(length = 9)
     int numero;
